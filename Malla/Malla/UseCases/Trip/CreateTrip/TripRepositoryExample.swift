@@ -11,7 +11,7 @@ import Foundation
 ///
 /// Camada **Use Cases / Ports**. O protocolo mora aqui porque quem precisa
 /// dele é o caso de uso; quem implementa está numa camada externa.
-protocol TripRepository: Sendable {
+protocol TripRepositoryExample: Sendable {
     /// Grava a viagem, criando ou atualizando.
     ///
     /// - Parameter trip: viagem já validada pelas regras de negócio.
