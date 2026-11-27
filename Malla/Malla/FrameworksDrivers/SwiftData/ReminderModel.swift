@@ -9,21 +9,21 @@ import Foundation
 import SwiftData
 
 @Model
-final class RemindeModel{
+final class ReminderModel{
    
     var id: UUID
     var data: Data
     var time: Data
-    var titol: String
-    var descripcion: String
+    var title: String
+    var reminderDescription: String
     var trip: TripModel
     
-    init(data: Data, time: Data, titol: String, descripcion: String, trip: TripModel) {
-        self.id = UUID()
+    init(id: UUID, data: Data, time: Data, title: String, reminderDescription: String, trip: TripModel) {
+        self.id = id
         self.data = data
         self.time = time
-        self.titol = titol
-        self.descripcion = descripcion
+        self.title = title
+        self.reminderDescription = reminderDescription
         self.trip = trip
     }
 }

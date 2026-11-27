@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum UFOModel: String{
+enum UFModel: String{
     case ac = "Acre"
     case al = "Alagoas"
     case ap = "Amapá"

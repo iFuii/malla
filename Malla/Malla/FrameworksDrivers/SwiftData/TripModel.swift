@@ -9,34 +9,34 @@ import Foundation
 import SwiftData
 
 @Model
-final class TripModel {
+final class TripModel: Sendable {
     
     var id: UUID
     var name: String
     var deta: Data
     var photo: Data
-//  TODO:  var type: typeModelEnum
+    var type: TripType
     var lugagge: [UUID]?
     var itens: [ItemModel]
-//  TODO: var reminders: [remindersModel]?
+    var reminders: [ReminderModel]?
     var Duration: Int
     var Recurrence: RecurrenceModel?
-    var UfoOrigin: UFOModel
-    var UfoDestination: UFOModel
+    var UfOrigin:  UFModel
+    var UfDestination: UFModel
     var Origin: String
     var Destination: String
     
-    init(name: String, deta: Data, photo: Data, lugagge: [UUID]? = nil, itens: [ItemModel], Duration: Int, UfoOrigin: UFOModel, UfoDestination: UFOModel, Origin: String, Destination: String) {
+    init(name: String, deta: Data, photo: Data, lugagge: [UUID]? = nil, itens: [ItemModel], Duration: Int, UfOrigin: UFModel, UfDestination: UFModel, Origin: String, Destination: String) {
         self.id = UUID()
         self.name = name
         self.deta = deta
         self.photo = photo
-//      TODO:  self.type = type
+        self.type = type
         self.lugagge = lugagge
         self.itens = itens
         self.Duration = Duration
-        self.UfoOrigin = UfoOrigin
-        self.UfoDestination = UfoDestination
+        self.UfOrigin = UfOrigin
+        self.UfDestination = UfDestination
         self.Origin = Origin
         self.Destination = Destination
     }
