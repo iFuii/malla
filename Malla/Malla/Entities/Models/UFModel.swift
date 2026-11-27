@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum UFModel: String{
+enum UFModel: String, Codable{
     case ac = "Acre"
     case al = "Alagoas"
     case ap = "Amapá"
@@ -35,4 +35,11 @@ enum UFModel: String{
     case sp = "São Paulo"
     case se = "Sergipe"
     case to = "Tocantins"
+    
+    var assetName: String {
+        rawValue
+            .folding(options: .diacriticInsensitive, locale: .current)
+            .lowercased()
+            .replacingOccurrences(of: " ", with: "-")
+    }
 }
