@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum LitersModel: String{
+enum LitersModel: String, Codable{
     case s = "22L"
     case m = "40L"
     case l = "70L"

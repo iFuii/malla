@@ -8,8 +8,8 @@
 import Foundation
 
 enum TripType: String, Codable, Hashable{
-    case freeTime
-    case work
+    case freeTime = "Lazer"
+    case work = "Trabalho"
 }
  
 
