@@ -64,7 +64,7 @@ enum TripBannerType {
         case .type1:
             return Color(.tertiary)
         case .type2:
-            return Color(.tertiary) // Altere aqui caso o Tipo 2 tenha outra cor de fundo
+            return Color(.accent) // Altere aqui caso o Tipo 2 tenha outra cor de fundo
         }
     }
 
