@@ -20,7 +20,7 @@ final class TripModel {
     var itens: [ItemModel]
 //  TODO: var reminders: [remindersModel]?
     var Duration: Int
-//  TODO: var Recurrence: RecurrenceEnum?
+    var Recurrence: RecurrenceModel?
     var UfoOrigin: UFOModel
     var UfoDestination: UFOModel
     var Origin: String
