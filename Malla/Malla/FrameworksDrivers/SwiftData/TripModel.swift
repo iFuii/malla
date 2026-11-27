@@ -9,7 +9,7 @@ import Foundation
 import SwiftData
 
 @Model
-final class TripModel: Sendable {
+final class TripModel {
     
     var id: UUID
     var name: String
@@ -21,10 +21,10 @@ final class TripModel: Sendable {
     var reminders: [ReminderModel]?
     var Duration: Int
     var Recurrence: RecurrenceModel?
-    var UfOrigin:  UFModel
-    var UfDestination: UFModel
-    var Origin: String
-    var Destination: String
+    var ufOrigin:  UFModel
+    var ufDestination: UFModel
+    var origin: String
+    var destination: String
     
     init(name: String, deta: Data, photo: Data, lugagge: [UUID]? = nil, itens: [ItemModel], Duration: Int, UfOrigin: UFModel, UfDestination: UFModel, Origin: String, Destination: String) {
         self.id = UUID()
@@ -35,10 +35,10 @@ final class TripModel: Sendable {
         self.lugagge = lugagge
         self.itens = itens
         self.Duration = Duration
-        self.UfOrigin = UfOrigin
-        self.UfDestination = UfDestination
-        self.Origin = Origin
-        self.Destination = Destination
+        self.ufOrigin = UfOrigin
+        self.ufDestination = UfDestination
+        self.origin = Origin
+        self.destination = Destination
     }
     
     

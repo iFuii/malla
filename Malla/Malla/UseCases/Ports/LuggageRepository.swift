@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol LugaggeRepository: Sendable{
+protocol LuggageRepository: Sendable{
     func add()
     func delete()
     func updateName()

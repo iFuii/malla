@@ -15,15 +15,15 @@ final class ItemModel{
     var name: String
     var quantity: Int
     var size: Double?
-    var isInLugagge: Bool
+    var isInLuggage: Bool
     var isEssencial: Bool
     
-    init(name: String, quantity: Int, size: Double? = 0, isInLugagge: Bool, isEssencial: Bool) {
+    init(name: String, quantity: Int, size: Double? = 0, isInLuggage: Bool, isEssencial: Bool) {
         self.id = UUID()
         self.name = name
         self.quantity = quantity
         self.size = size
-        self.isInLugagge = isInLugagge
+        self.isInLuggage = isInLuggage
         self.isEssencial = isEssencial
     }
     
