@@ -16,14 +16,13 @@ final class ReminderModel{
     var time: Data
     var title: String
     var reminderDescription: String
-    var trip: TripModel
+    var trip: TripModel?
     
-    init(id: UUID, data: Data, time: Data, title: String, reminderDescription: String, trip: TripModel) {
+    init(id: UUID, data: Data, time: Data, title: String, reminderDescription: String) {
         self.id = id
         self.data = data
         self.time = time
         self.title = title
         self.reminderDescription = reminderDescription
-        self.trip = trip
     }
 }

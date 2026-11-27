@@ -19,14 +19,14 @@ final class TripModel {
     var lugagge: [UUID]?
     var itens: [ItemModel]
     var reminders: [ReminderModel]?
-    var Duration: Int
-    var Recurrence: RecurrenceModel?
+    var duration: Int
+    var recurrence: RecurrenceModel?
     var ufOrigin:  UFModel
     var ufDestination: UFModel
     var origin: String
     var destination: String
     
-    init(name: String, deta: Data, photo: Data, lugagge: [UUID]? = nil, itens: [ItemModel], Duration: Int, UfOrigin: UFModel, UfDestination: UFModel, Origin: String, Destination: String) {
+    init(name: String, deta: Data, photo: Data,type: TripType, lugagge: [UUID]? = nil, itens: [ItemModel], duration: Int, ufOrigin: UFModel, ufDestination: UFModel, origin: String, destination: String) {
         self.id = UUID()
         self.name = name
         self.deta = deta
@@ -34,12 +34,13 @@ final class TripModel {
         self.type = type
         self.lugagge = lugagge
         self.itens = itens
-        self.Duration = Duration
-        self.ufOrigin = UfOrigin
-        self.ufDestination = UfDestination
-        self.origin = Origin
-        self.destination = Destination
+        self.duration = duration
+        self.ufOrigin = ufOrigin
+        self.ufDestination = ufDestination
+        self.origin = origin
+        self.destination = destination
     }
     
     
 }
+
